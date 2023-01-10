@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Chat from "./Chat";
 
 function Home() {
   const [username, setUsername] = useState("");
@@ -9,10 +10,12 @@ function Home() {
     e.preventDefault();
     localStorage.setItem("username", username);
     navigate("/chat");
+    return <Chat username={username} />;
   };
+  console.log(username);
 
   return (
-    <form onSubmit={handleUsernameSubmit}>
+    <form onSubmit={handleUsernameSubmit} id="username-form">
       <h2>Sign in to Open Chat</h2>
       <label>Username</label>
       <input
@@ -20,7 +23,6 @@ function Home() {
         onChange={(e) => setUsername(e.target.value)}
         name="username"
         id="username"
-        minLength={5}
       ></input>
       <button>Sign In</button>
     </form>
