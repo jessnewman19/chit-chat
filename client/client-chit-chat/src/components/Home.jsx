@@ -10,9 +10,9 @@ function Home() {
     e.preventDefault();
     localStorage.setItem("username", username);
     navigate("/chat");
+    console.log(username);
     return <Chat username={username} />;
   };
-  console.log(username);
 
   return (
     <form onSubmit={handleUsernameSubmit} id="username-form">

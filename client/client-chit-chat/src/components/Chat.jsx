@@ -12,19 +12,19 @@ function Chat({ username }) {
     localStorage.clear();
     navigate("/");
   };
-
   console.log(username);
 
   return (
     <div id="chat-container">
-      <button onClick={handleSignOut}>Sign Out</button>
-      <ChatBar username={username} />
+      <ChatBar />
       <ChatBody />
       <ChatFooter />
+      <button onClick={handleSignOut} id="sign-out-button">
+        Sign Out
+      </button>
     </div>
   );
 }
-
 Chat.propTypes = {
   username: PropTypes.string,
 };

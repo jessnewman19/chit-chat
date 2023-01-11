@@ -22,12 +22,56 @@
 }
 
 #chat-container {
-  padding: 20px;
   border-style: groove;
   border-radius: 15px;
   border-color: orange;
+  width: 750px;
+  height: 600px;
+  overflow: hidden;
 }
 
+#sign-out-button {
+  display: inline-block;
+  vertical-align: top;
+  float: right;
+}
+
+/*CHAT SIDEBAR STYLING*/
+#chat-bar {
+  width: 260px;
+  height: 600px;
+  background-color: #3b3e49;
+  display: inline-block;
+  font-size: 15px;
+  vertical-align: top;
+  color: white;
+}
+
+#chit-chat-header {
+  text-align: center;
+}
+
+#active-user-header {
+  text-align: center;
+}
+
+aside ul {
+  padding-left: 0;
+  margin: 0;
+  list-style-type: none;
+  overflow: scroll;
+  height: 600px;
+}
+
+aside li {
+  padding: 10px 0;
+}
+
+aside li:hover {
+  background-color: #5e616a;
+}
+
+/*OVERALL STYLING*/
 a {
   font-weight: 500;
   color: #646cff;
