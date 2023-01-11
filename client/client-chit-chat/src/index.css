@@ -30,12 +30,6 @@
   overflow: hidden;
 }
 
-#sign-out-button {
-  display: inline-block;
-  vertical-align: top;
-  float: right;
-}
-
 /*CHAT SIDEBAR STYLING*/
 #chat-bar {
   width: 260px;
@@ -45,11 +39,47 @@
   font-size: 15px;
   vertical-align: top;
   color: white;
+  border-style: none;
 }
 
 #chit-chat-header {
   text-align: center;
 }
+
+/***********************************************************/
+
+/*CHAT HEADER STYLING*/
+
+#chat-body-header {
+  height: 100px;
+  width: 275px;
+  display: inline-block;
+  text-align: right;
+  border-color: magenta;
+  border-style: dashed;
+  padding: 30px 20px 30px 40px;
+}
+
+
+/***********************************************************/
+
+/*CHAT BODY STYLING*/
+
+#chat-body {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+/***********************************************************/
+
+/*CHAT FOOTER STYLING*/
+
+#chat-body-footer {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+/***********************************************************/
 
 #active-user-header {
   text-align: center;

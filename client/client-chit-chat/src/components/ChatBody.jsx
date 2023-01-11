@@ -1,7 +1,7 @@
 import React from "react";
 
 function ChatBody() {
-  return <div>ChatBody</div>;
+  return <div id="chat-body">ChatBody</div>;
 }
 
 export default ChatBody;

@@ -1,27 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { useNavigate } from "react-router-dom";
 import ChatBar from "./ChatBar";
 import ChatBody from "./ChatBody";
 import ChatFooter from "./ChatFooter";
+import ChatHeader from "./ChatHeader";
 
-function Chat({ username }) {
-  const navigate = useNavigate();
-
-  const handleSignOut = () => {
-    localStorage.clear();
-    navigate("/");
-  };
-  console.log(username);
-
+function Chat() {
   return (
     <div id="chat-container">
       <ChatBar />
       <ChatBody />
       <ChatFooter />
-      <button onClick={handleSignOut} id="sign-out-button">
-        Sign Out
-      </button>
+      <ChatHeader />
     </div>
   );
 }
